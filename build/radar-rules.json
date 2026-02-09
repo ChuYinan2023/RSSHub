@@ -16259,6 +16259,19 @@
       }
     ]
   },
+  "escardio.org": {
+    "_name": "European Society of Cardiology",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/news/press/press-releases/"
+        ],
+        "target": "/escardio/press-releases"
+      }
+    ]
+  },
   "eshukan.com": {
     "_name": "万维书刊网",
     "www": [

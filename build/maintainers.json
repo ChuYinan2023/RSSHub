@@ -2856,6 +2856,9 @@
   "/eprice/:region?": [
     "TonyRL"
   ],
+  "/escardio/press-releases": [
+    "ChuYinan2023"
+  ],
   "/eshukan/academic/:id?": [
     "nczitzk"
   ],

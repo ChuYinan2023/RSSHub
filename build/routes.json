@@ -41078,6 +41078,44 @@
     "url": "eprice.com.tw",
     "lang": "zh-TW"
   },
+  "escardio": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "categories": [
+          "journal"
+        ],
+        "example": "/escardio/press-releases",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.escardio.org/news/press/press-releases/"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "name": "Press Releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.escardio.org/news/press/press-releases/",
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/escardio/press-releases.ts')"
+      }
+    },
+    "name": "European Society of Cardiology",
+    "url": "www.escardio.org",
+    "lang": "en"
+  },
   "eshukan": {
     "routes": {
       "/academic/:id?": {
