@@ -1,0 +1,15 @@
+{
+    "permissions": {
+        "allow": [
+            "mcp__Desktop_Commander__list_directory",
+            "Bash(gh pr view:*)",
+            "Bash(gh api:*)",
+            "Bash(timeout:*)",
+            "Bash(curl:*)",
+            "Bash(findstr:*)",
+            "Bash(del \"D:\\\\PlayClaudeCode\\\\RSSHub\\\\nul\")",
+            "Bash(del \"D:\\\\PlayClaudeCode\\\\RSSHub\\\\D％60PlayClaudeCodeRSSHubtest-output.xml\")",
+            "Bash(git commit:*)"
+        ]
+    }
+}
