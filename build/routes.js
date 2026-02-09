@@ -96177,6 +96177,44 @@ export default {
     "description": "\n::: tip\n太平洋科技是专业IT门户网站,为用户和经销商提供IT资讯和行情报价,涉及电脑,手机,数码产品,软件等.\n:::",
     "lang": "zh-CN"
   },
+  "pcronline": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "categories": [
+          "journal"
+        ],
+        "example": "/pcronline/press-releases",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.pcronline.com/News/Press-releases"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "name": "Press Releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.pcronline.com/News/Press-releases",
+        "location": "press-releases.ts",
+        "module": () => import('@/routes/pcronline/press-releases.ts')
+      }
+    },
+    "name": "PCRonline",
+    "url": "www.pcronline.com",
+    "lang": "en"
+  },
   "pencilnews": {
     "routes": {
       "/": {

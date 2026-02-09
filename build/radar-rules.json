@@ -37834,6 +37834,19 @@
       }
     ]
   },
+  "pcronline.com": {
+    "_name": "PCRonline",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/News/Press-releases"
+        ],
+        "target": "/pcronline/press-releases"
+      }
+    ]
+  },
   "penguinrandomhouse.com": {
     "_name": "Penguin Random House",
     ".": [
