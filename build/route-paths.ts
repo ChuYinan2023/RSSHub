@@ -1821,6 +1821,7 @@ export type RoutePath =
   | `/medium/tag/:user/:tag`
   | `/medscape/cardiology`
   | `/medsci/:sid?/:tid?`
+  | `/medtechdive/press-release`
   | `/meishichina/recipe/:category{.+}?`
   | `/meituan/tech`
   | `/melonbooks/search/:query?`

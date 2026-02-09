@@ -78305,6 +78305,44 @@
     "url": "medsci.cn",
     "lang": "zh-CN"
   },
+  "medtechdive": {
+    "routes": {
+      "/press-release": {
+        "path": "/press-release",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/medtechdive/press-release",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.medtechdive.com/press-release/"
+            ],
+            "target": "/press-release"
+          }
+        ],
+        "name": "Press Releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.medtechdive.com/press-release/",
+        "location": "press-release.ts",
+        "module": "() => import('@/routes/medtechdive/press-release.ts')"
+      }
+    },
+    "name": "MedTech Dive",
+    "url": "www.medtechdive.com",
+    "lang": "en"
+  },
   "meishichina": {
     "routes": {
       "/recipe/:category{.+}?": {

@@ -29370,6 +29370,19 @@
       }
     ]
   },
+  "medtechdive.com": {
+    "_name": "MedTech Dive",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/press-release/"
+        ],
+        "target": "/medtechdive/press-release"
+      }
+    ]
+  },
   "meishichina.com": {
     "_name": "美食天下",
     "home": [

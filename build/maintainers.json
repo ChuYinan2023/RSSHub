@@ -5541,6 +5541,9 @@
   "/medsci/:sid?/:tid?": [
     "nczitzk"
   ],
+  "/medtechdive/press-release": [
+    "ChuYinan2023"
+  ],
   "/meishichina/recipe/:category{.+}?": [
     "nczitzk"
   ],
