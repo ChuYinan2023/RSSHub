@@ -96179,6 +96179,37 @@
   },
   "pcronline": {
     "routes": {
+      "/pcr-press-releases": {
+        "path": "/pcr-press-releases",
+        "categories": [
+          "journal"
+        ],
+        "example": "/pcronline/pcr-press-releases",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.pcronline.com/News/PCR-Press-Releases"
+            ],
+            "target": "/pcr-press-releases"
+          }
+        ],
+        "name": "PCR Press Releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.pcronline.com/News/PCR-Press-Releases",
+        "location": "pcr-press-releases.ts",
+        "module": "() => import('@/routes/pcronline/pcr-press-releases.ts')"
+      },
       "/press-releases": {
         "path": "/press-releases",
         "categories": [

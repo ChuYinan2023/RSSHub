@@ -37838,6 +37838,14 @@
     "_name": "PCRonline",
     "www": [
       {
+        "title": "PCR Press Releases",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/News/PCR-Press-Releases"
+        ],
+        "target": "/pcronline/pcr-press-releases"
+      },
+      {
         "title": "Press Releases",
         "docs": "https://docs.rsshub.app/routes/journal",
         "source": [

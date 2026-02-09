@@ -6656,6 +6656,9 @@
   "/pconline/focus/:category?": [
     "CH563"
   ],
+  "/pcronline/pcr-press-releases": [
+    "ChuYinan2023"
+  ],
   "/pcronline/press-releases": [
     "ChuYinan2023"
   ],

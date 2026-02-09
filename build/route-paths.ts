@@ -2175,6 +2175,7 @@ export type RoutePath =
   | `/paulgraham/articles`
   | `/paulgraham/essays`
   | `/pconline/focus/:category?`
+  | `/pcronline/pcr-press-releases`
   | `/pcronline/press-releases`
   | `/pencilnews/`
   | `/penguin-random-house/articles`
