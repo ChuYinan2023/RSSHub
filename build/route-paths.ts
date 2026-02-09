@@ -449,6 +449,7 @@ export type RoutePath =
   | `/cara/likes/:user`
   | `/cara/portfolio/:user`
   | `/cara/timeline/:user`
+  | `/cardiovascularbusiness/news`
   | `/carousell/:region/:keyword`
   | `/cartoonmad/comic/:id`
   | `/cas/cg/:caty?`

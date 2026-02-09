@@ -8613,6 +8613,19 @@
       }
     ]
   },
+  "cardiovascularbusiness.com": {
+    "_name": "Cardiovascular Business",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news"
+        ],
+        "target": "/cardiovascularbusiness/news"
+      }
+    ]
+  },
   "carousell.com": {
     "_name": "Carousell",
     "au": [

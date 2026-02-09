@@ -21087,6 +21087,44 @@ export default {
     "url": "cara.app",
     "lang": "en"
   },
+  "cardiovascularbusiness": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/cardiovascularbusiness/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "cardiovascularbusiness.com/news"
+            ],
+            "target": "/news"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "cardiovascularbusiness.com/news",
+        "location": "news.ts",
+        "module": () => import('@/routes/cardiovascularbusiness/news.ts')
+      }
+    },
+    "name": "Cardiovascular Business",
+    "url": "cardiovascularbusiness.com",
+    "lang": "en"
+  },
   "carousell": {
     "routes": {
       "/:region/:keyword": {
