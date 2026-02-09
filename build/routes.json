@@ -78194,6 +78194,45 @@
     "url": "medium.com",
     "lang": "en"
   },
+  "medscape": {
+    "routes": {
+      "/cardiology": {
+        "path": "/cardiology",
+        "categories": [
+          "journal"
+        ],
+        "example": "/medscape/cardiology",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.medscape.com/index/list_13471_0"
+            ],
+            "target": "/cardiology"
+          }
+        ],
+        "name": "Cardiology News",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.medscape.com/index/list_13471_0",
+        "location": "cardiology.ts",
+        "module": "() => import('@/routes/medscape/cardiology.ts')"
+      }
+    },
+    "name": "Medscape",
+    "apiRoutes": {},
+    "url": "www.medscape.com",
+    "lang": "en"
+  },
   "medsci": {
     "routes": {
       "/:sid?/:tid?": {

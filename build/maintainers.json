@@ -5532,6 +5532,9 @@
   "/medium/tag/:user/:tag": [
     "ImSingee"
   ],
+  "/medscape/cardiology": [
+    "ChuYinan2023"
+  ],
   "/medsci/:sid?/:tid?": [
     "nczitzk"
   ],

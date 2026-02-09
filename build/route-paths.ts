@@ -1818,6 +1818,7 @@ export type RoutePath =
   | `/medium/for-you/:user`
   | `/medium/list/:user/:catalogId`
   | `/medium/tag/:user/:tag`
+  | `/medscape/cardiology`
   | `/medsci/:sid?/:tid?`
   | `/meishichina/recipe/:category{.+}?`
   | `/meituan/tech`
