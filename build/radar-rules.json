@@ -7174,6 +7174,19 @@
       }
     ]
   },
+  "baxter.com": {
+    "_name": "Baxter",
+    "www": [
+      {
+        "title": "Newsroom",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/baxter-newsroom"
+        ],
+        "target": "/baxter/newsroom"
+      }
+    ]
+  },
   "bbcnewslabs.co.uk": {
     "_name": "BBC News Labs",
     ".": [

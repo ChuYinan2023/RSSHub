@@ -15125,6 +15125,47 @@
     "url": "bast.net.cn",
     "lang": "zh-CN"
   },
+  "baxter": {
+    "routes": {
+      "/newsroom": {
+        "path": "/newsroom",
+        "name": "Newsroom",
+        "url": "www.baxter.com/baxter-newsroom",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/baxter/newsroom",
+        "parameters": {},
+        "description": "Latest news and press releases from Baxter.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.baxter.com/baxter-newsroom"
+            ],
+            "target": "/newsroom"
+          }
+        ],
+        "view": 0,
+        "location": "newsroom.ts",
+        "module": "() => import('@/routes/baxter/newsroom.ts')"
+      }
+    },
+    "name": "Baxter",
+    "url": "www.baxter.com",
+    "lang": "en"
+  },
   "bbc": {
     "routes": {
       "/:site?/:channel?": {

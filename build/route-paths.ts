@@ -280,6 +280,7 @@ export type RoutePath =
   | `/barronschina/:id?`
   | `/baselang/blog/:category?`
   | `/bast*`
+  | `/baxter/newsroom`
   | `/bbc/:site?/:channel?`
   | `/bbc/learningenglish/:channel?`
   | `/bbcnewslabs/news`
