@@ -34,7 +34,7 @@ export const route: Route = {
     features: {
         requireConfig: false,
         requirePuppeteer: false,
-        antiCrawler: false,
+        antiCrawler: true,
         supportRadar: true,
         supportBT: false,
         supportPodcast: false,
@@ -51,7 +51,15 @@ export const route: Route = {
 
 async function handler(ctx): Promise<Data> {
     const limit = Number.parseInt(ctx.req.query('limit') ?? '20', 10);
-    const allItems: AZPressItem[] = await ofetch(apiUrl);
+    const fetchOptions = {
+        headerGeneratorOptions: {
+            browsers: [{ name: 'chrome', minVersion: 120 }],
+            operatingSystems: ['windows'],
+            devices: ['desktop'],
+        },
+    };
+
+    const allItems: AZPressItem[] = await ofetch(apiUrl, fetchOptions);
     const selected = allItems.slice(0, limit);
 
     const items: DataItem[] = await Promise.all(
@@ -59,7 +67,7 @@ async function handler(ctx): Promise<Data> {
             const link = buildLink(entry.link);
 
             const description = (await cache.tryGet(link, async () => {
-                const html = await ofetch(link);
+                const html = await ofetch(link, fetchOptions);
                 const $ = load(html);
                 return $('div[itemprop="articleBody"] .par.parsys').html()?.trim() || $('div.pt-article__body').html()?.trim() || '';
             })) as string;
