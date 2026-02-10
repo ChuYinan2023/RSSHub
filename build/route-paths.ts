@@ -228,6 +228,7 @@ export type RoutePath =
   | `/asianfanfics/text-search/:keyword`
   | `/asiantolick/:category{.+}?`
   | `/asmr-200/works/:order?/:subtitle?/:sort?`
+  | `/astrazeneca/press-releases`
   | `/asus/bios/:model/:lang?`
   | `/asus/gpu-tweak`
   | `/atcoder/contest/:language?/:rated?/:category?/:keyword?`

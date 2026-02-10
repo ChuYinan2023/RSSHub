@@ -688,6 +688,9 @@
   "/asmr-200/works/:order?/:subtitle?/:sort?": [
     "hualiong"
   ],
+  "/astrazeneca/press-releases": [
+    "ChuYinan2023"
+  ],
   "/asus/bios/:model/:lang?": [
     "Fatpandac"
   ],

@@ -12303,6 +12303,47 @@
     "url": "asmr-200.com",
     "lang": "zh-CN"
   },
+  "astrazeneca": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "www.astrazeneca.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/astrazeneca/press-releases",
+        "parameters": {},
+        "description": "Latest press releases from AstraZeneca.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.astrazeneca.com/media-centre/press-releases.html"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/astrazeneca/press-releases.ts')"
+      }
+    },
+    "name": "AstraZeneca",
+    "url": "www.astrazeneca.com",
+    "lang": "en"
+  },
   "asus": {
     "routes": {
       "/bios/:model/:lang?": {

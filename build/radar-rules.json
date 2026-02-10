@@ -6228,6 +6228,19 @@
       }
     ]
   },
+  "astrazeneca.com": {
+    "_name": "AstraZeneca",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/media-centre/press-releases.html"
+        ],
+        "target": "/astrazeneca/press-releases"
+      }
+    ]
+  },
   "asus.com": {
     "_name": "ASUS",
     "www": [
