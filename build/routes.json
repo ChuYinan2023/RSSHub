@@ -96745,6 +96745,47 @@
     "description": "Perplexity - AI-powered search and discovery engine",
     "lang": "en"
   },
+  "pfizer": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "www.pfizer.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/pfizer/press-releases",
+        "parameters": {},
+        "description": "Latest press releases from Pfizer newsroom.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.pfizer.com/newsroom/press-releases"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/pfizer/press-releases.ts')"
+      }
+    },
+    "name": "Pfizer",
+    "url": "www.pfizer.com",
+    "lang": "en"
+  },
   "phoronix": {
     "routes": {
       "/:category?/:topic?": {

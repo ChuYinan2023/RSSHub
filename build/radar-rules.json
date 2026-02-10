@@ -37998,6 +37998,19 @@
       }
     ]
   },
+  "pfizer.com": {
+    "_name": "Pfizer",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/newsroom/press-releases"
+        ],
+        "target": "/pfizer/press-releases"
+      }
+    ]
+  },
   "phoronix.com": {
     "_name": "Phoronix",
     ".": [

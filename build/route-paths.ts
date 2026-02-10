@@ -2191,6 +2191,7 @@ export type RoutePath =
   | `/people/xjpjh/:keyword?/:year?`
   | `/peopo/topic/:topicId?`
   | `/perplexity/changelog`
+  | `/pfizer/press-releases`
   | `/phoronix/:category?/:topic?`
   | `/pianyivps/`
   | `/pianyuan/index/:media?`
