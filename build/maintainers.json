@@ -306,6 +306,9 @@
     "nczitzk"
   ],
   "/aamacau/:category?/:id?": [],
+  "/abbvie/news": [
+    "ChuYinan2023"
+  ],
   "/abc/:category{.+}?": [
     "nczitzk",
     "pseudoyu"

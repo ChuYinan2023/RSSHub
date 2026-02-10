@@ -102,6 +102,7 @@ export type RoutePath =
   | `/a9vg/:category{.+}?`
   | `/aa1/60s/:category?`
   | `/aamacau/:category?/:id?`
+  | `/abbvie/news`
   | `/abc/:category{.+}?`
   | `/abmedia/:category?`
   | `/abmedia/index`

@@ -5711,6 +5711,47 @@ export default {
     "url": "aamacau.com",
     "lang": "zh-HK"
   },
+  "abbvie": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News Releases",
+        "url": "news.abbvie.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/abbvie/news",
+        "parameters": {},
+        "description": "Latest news releases from AbbVie.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "news.abbvie.com/index.php?s=2429"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": () => import('@/routes/abbvie/news.ts')
+      }
+    },
+    "name": "AbbVie",
+    "url": "news.abbvie.com",
+    "lang": "en"
+  },
   "abc": {
     "routes": {
       "/:category{.+}?": {
