@@ -22044,6 +22044,19 @@
       }
     ]
   },
+  "heart.org": {
+    "_name": "American Heart Association",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/en/news"
+        ],
+        "target": "/heart/news"
+      }
+    ]
+  },
   "hebtv.com": {
     "_name": "河北网络广播电视台",
     "web.cmc": [

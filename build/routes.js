@@ -57370,6 +57370,47 @@ export default {
     "url": "hdu.edu.cn",
     "lang": "zh-CN"
   },
+  "heart": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "www.heart.org/en/news",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/heart/news",
+        "parameters": {},
+        "description": "Latest news from the American Heart Association.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.heart.org/en/news"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": () => import('@/routes/heart/news.ts')
+      }
+    },
+    "name": "American Heart Association",
+    "url": "www.heart.org",
+    "lang": "en"
+  },
   "hebtv": {
     "routes": {
       "/nbszxd": {
