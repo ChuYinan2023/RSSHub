@@ -2402,6 +2402,7 @@ export type RoutePath =
   | `/samsung/research/blog`
   | `/sankei/news/:category`
   | `/sankei/topics/:topic`
+  | `/sanofi/press-releases`
   | `/sara/:type`
   | `/saraba1st/digest/:tid`
   | `/saraba1st/thread/:tid`

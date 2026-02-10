@@ -40364,6 +40364,19 @@
       }
     ]
   },
+  "sanofi.com": {
+    "_name": "Sanofi",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/en/media-room/press-releases"
+        ],
+        "target": "/sanofi/press-releases"
+      }
+    ]
+  },
   "sass.org.cn": {
     "_name": "上海社会科学院",
     "gs": [

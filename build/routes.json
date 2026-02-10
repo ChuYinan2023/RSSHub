@@ -104597,6 +104597,47 @@
     "url": "sankei.com",
     "lang": "ja"
   },
+  "sanofi": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "www.sanofi.com/en/media-room/press-releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/sanofi/press-releases",
+        "parameters": {},
+        "description": "Latest press releases from Sanofi.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.sanofi.com/en/media-room/press-releases"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/sanofi/press-releases.ts')"
+      }
+    },
+    "name": "Sanofi",
+    "url": "www.sanofi.com",
+    "lang": "en"
+  },
   "sara": {
     "routes": {
       "/:type": {
