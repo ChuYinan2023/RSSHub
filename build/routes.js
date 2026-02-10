@@ -21119,6 +21119,37 @@ export default {
         "url": "cardiovascularbusiness.com/news",
         "location": "news.ts",
         "module": () => import('@/routes/cardiovascularbusiness/news.ts')
+      },
+      "/press-releases": {
+        "path": "/press-releases",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/cardiovascularbusiness/press-releases",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "cardiovascularbusiness.com/resources/press-releases"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "name": "Press Releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "cardiovascularbusiness.com/resources/press-releases",
+        "location": "press-releases.ts",
+        "module": () => import('@/routes/cardiovascularbusiness/press-releases.ts')
       }
     },
     "name": "Cardiovascular Business",

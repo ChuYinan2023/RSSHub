@@ -8623,6 +8623,14 @@
           "/news"
         ],
         "target": "/cardiovascularbusiness/news"
+      },
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/resources/press-releases"
+        ],
+        "target": "/cardiovascularbusiness/press-releases"
       }
     ]
   },
