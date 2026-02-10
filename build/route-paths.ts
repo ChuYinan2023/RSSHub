@@ -2048,6 +2048,7 @@ export type RoutePath =
   | `/notefolio/search/:category?/:order?/:time?/:query?`
   | `/notion/database/:databaseId`
   | `/notion/release`
+  | `/novartis/cn/news/:type?`
   | `/now/news/:category?/:id?`
   | `/nowcoder/discuss/:type/:order`
   | `/nowcoder/experience/:tagId`

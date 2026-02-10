@@ -34964,6 +34964,19 @@
       }
     ]
   },
+  "novartis.com.cn": {
+    "_name": "Novartis China",
+    "www": [
+      {
+        "title": "新闻发布",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/news/news-archive"
+        ],
+        "target": "/novartis/cn/news"
+      }
+    ]
+  },
   "now.com": {
     "_name": "Now 新聞",
     "news": [

@@ -6240,6 +6240,9 @@
   "/notion/release": [
     "equt"
   ],
+  "/novartis/cn/news/:type?": [
+    "ChuYinan2023"
+  ],
   "/now/news/:category?/:id?": [
     "nczitzk"
   ],

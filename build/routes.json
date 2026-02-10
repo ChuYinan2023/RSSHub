@@ -89807,6 +89807,49 @@
     "description": "::: warning\nNeed to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations) for details.\n:::\n\n::: tip Recommendation\nIt is recommended to use with clipping tools such as Notion Web Clipper.\n:::",
     "lang": "en"
   },
+  "novartis": {
+    "routes": {
+      "/cn/news/:type?": {
+        "path": "/cn/news/:type?",
+        "name": "新闻发布",
+        "url": "www.novartis.com.cn",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/novartis/cn/news",
+        "parameters": {
+          "type": "News type: `news` (Featured News), `media_release` (Media Release), `external_news` (In The News), `story_page` (Story). Defaults to all."
+        },
+        "description": "Latest news from Novartis China.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.novartis.com.cn/news/news-archive"
+            ],
+            "target": "/cn/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": "() => import('@/routes/novartis/news.ts')"
+      }
+    },
+    "name": "Novartis China",
+    "url": "www.novartis.com.cn",
+    "lang": "zh-CN"
+  },
   "now": {
     "routes": {
       "/news/:category?/:id?": {
