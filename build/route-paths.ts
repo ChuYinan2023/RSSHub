@@ -2640,6 +2640,7 @@ export type RoutePath =
   | `/straitstimes/:category?/:section?`
   | `/stratechery/`
   | `/stream-capital/search`
+  | `/stryker/news`
   | `/studygolang/go/:id?`
   | `/studygolang/jobs`
   | `/studygolang/weekly`

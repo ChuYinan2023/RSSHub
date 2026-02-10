@@ -43636,6 +43636,20 @@
       }
     ]
   },
+  "stryker.com": {
+    "_name": "Stryker",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/us/en/about/news.html",
+          "/us/en/about/news/index.html"
+        ],
+        "target": "/stryker/news"
+      }
+    ]
+  },
   "studygolang.com": {
     "_name": "Go 语言中文网",
     ".": [

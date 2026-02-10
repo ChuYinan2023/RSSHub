@@ -114275,6 +114275,48 @@ export default {
     "url": "www.stream-capital.com",
     "lang": "zh-CN"
   },
+  "stryker": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "www.stryker.com/us/en/about/news",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/stryker/news",
+        "parameters": {},
+        "description": "Latest news from Stryker.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.stryker.com/us/en/about/news.html",
+              "www.stryker.com/us/en/about/news/index.html"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": () => import('@/routes/stryker/news.ts')
+      }
+    },
+    "name": "Stryker",
+    "url": "www.stryker.com",
+    "lang": "en"
+  },
   "studygolang": {
     "routes": {
       "/go/:id?": {
