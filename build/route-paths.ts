@@ -1082,6 +1082,7 @@ export type RoutePath =
   | `/gdufs/news`
   | `/gdufs/xwxy/:category?`
   | `/gdut/oa_news/:type?`
+  | `/ge/news`
   | `/geekpark/:column?`
   | `/gelbooru/post/:tags?/:quality?`
   | `/gelonghui/home/:tag?`

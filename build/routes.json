@@ -47213,6 +47213,48 @@
     "url": "oas.gdut.edu.cn",
     "lang": "zh-CN"
   },
+  "ge": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "www.ge.com/news",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/ge/news",
+        "parameters": {},
+        "description": "Latest press releases from GE.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ge.com/news",
+              "www.ge.com/news/press-releases"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": "() => import('@/routes/ge/news.ts')"
+      }
+    },
+    "name": "GE",
+    "url": "www.ge.com",
+    "lang": "en"
+  },
   "geekpark": {
     "routes": {
       "/:column?": {
