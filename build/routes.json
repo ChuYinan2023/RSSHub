@@ -78383,6 +78383,40 @@
   },
   "medtronic": {
     "routes": {
+      "/business-regional-news": {
+        "path": "/business-regional-news",
+        "name": "Business & Regional News",
+        "url": "news.medtronic.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/medtronic/business-regional-news",
+        "parameters": {},
+        "description": "Business and regional news from Medtronic newsroom.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "news.medtronic.com/business-regional-news"
+            ],
+            "target": "/business-regional-news"
+          }
+        ],
+        "view": 0,
+        "location": "business-regional-news.ts",
+        "module": "() => import('@/routes/medtronic/business-regional-news.ts')"
+      },
       "/press-releases": {
         "path": "/press-releases",
         "name": "Press Releases",
@@ -78419,6 +78453,7 @@
       }
     },
     "name": "Medtronic",
+    "apiRoutes": {},
     "url": "news.medtronic.com",
     "lang": "en"
   },

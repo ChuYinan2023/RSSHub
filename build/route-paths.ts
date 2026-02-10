@@ -1823,6 +1823,7 @@ export type RoutePath =
   | `/medscape/cardiology`
   | `/medsci/:sid?/:tid?`
   | `/medtechdive/press-release`
+  | `/medtronic/business-regional-news`
   | `/medtronic/press-releases`
   | `/meishichina/recipe/:category{.+}?`
   | `/meituan/tech`

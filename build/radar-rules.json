@@ -29400,6 +29400,14 @@
     "_name": "Medtronic",
     "news": [
       {
+        "title": "Business & Regional News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/business-regional-news"
+        ],
+        "target": "/medtronic/business-regional-news"
+      },
+      {
         "title": "Press Releases",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
