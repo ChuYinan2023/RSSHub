@@ -29396,6 +29396,19 @@
       }
     ]
   },
+  "medtronic.com": {
+    "_name": "Medtronic",
+    "news": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/press-releases"
+        ],
+        "target": "/medtronic/press-releases"
+      }
+    ]
+  },
   "meishichina.com": {
     "_name": "美食天下",
     "home": [
@@ -31899,6 +31912,19 @@
           "/crowdfunding/home"
         ],
         "target": "/mi/crowdfunding"
+      }
+    ]
+  },
+  "microport.com": {
+    "_name": "MicroPort",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/news"
+        ],
+        "target": "/microport/news"
       }
     ]
   },
@@ -41695,6 +41721,19 @@
           "/"
         ],
         "target": "/sicau/yan/:category?"
+      }
+    ]
+  },
+  "siemens.com": {
+    "_name": "Siemens",
+    "press": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/global/en"
+        ],
+        "target": "/siemens/press/global/en"
       }
     ]
   },

@@ -1823,6 +1823,7 @@ export type RoutePath =
   | `/medscape/cardiology`
   | `/medsci/:sid?/:tid?`
   | `/medtechdive/press-release`
+  | `/medtronic/press-releases`
   | `/meishichina/recipe/:category{.+}?`
   | `/meituan/tech`
   | `/melonbooks/search/:query?`
@@ -1836,6 +1837,7 @@ export type RoutePath =
   | `/metmuseum/exhibitions/:state?`
   | `/mi/crowdfunding`
   | `/mi/golden`
+  | `/microport/news`
   | `/microsoft/edge/addon/:crxid`
   | `/microsoft/mcr/product/*`
   | `/mihoyo/bbs/follow-list/:uid`
@@ -2513,6 +2515,7 @@ export type RoutePath =
   | `/sicau/jk/:gid/:typeId/:sortType/:token`
   | `/sicau/yan/:category?`
   | `/sicau/zsjy/:category?`
+  | `/siemens/press/:region?/:language?`
   | `/sigsac/ccs`
   | `/simpleinfo/:category?`
   | `/sina/csj`

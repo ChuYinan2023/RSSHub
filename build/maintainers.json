@@ -5547,6 +5547,9 @@
   "/medtechdive/press-release": [
     "ChuYinan2023"
   ],
+  "/medtronic/press-releases": [
+    "ChuYinan2023"
+  ],
   "/meishichina/recipe/:category{.+}?": [
     "nczitzk"
   ],
@@ -5584,6 +5587,9 @@
   ],
   "/mi/golden": [
     "nczitzk"
+  ],
+  "/microport/news": [
+    "ChuYinan2023"
   ],
   "/microsoft/edge/addon/:crxid": [
     "hoilc",
@@ -7711,6 +7717,9 @@
   ],
   "/sicau/zsjy/:category?": [
     "nczitzk"
+  ],
+  "/siemens/press/:region?/:language?": [
+    "ChuYinan2023"
   ],
   "/sigsac/ccs": [
     "ZeddYu"

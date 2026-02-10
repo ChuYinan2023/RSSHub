@@ -78381,6 +78381,47 @@
     "url": "www.medtechdive.com",
     "lang": "en"
   },
+  "medtronic": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "news.medtronic.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/medtronic/press-releases",
+        "parameters": {},
+        "description": "Latest press releases from Medtronic newsroom.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "news.medtronic.com/press-releases"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/medtronic/press-releases.ts')"
+      }
+    },
+    "name": "Medtronic",
+    "url": "news.medtronic.com",
+    "lang": "en"
+  },
   "meishichina": {
     "routes": {
       "/recipe/:category{.+}?": {
@@ -80971,6 +81012,47 @@
     "apiRoutes": {},
     "url": "mi.com",
     "lang": "zh-CN"
+  },
+  "microport": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "microport.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/microport/news",
+        "parameters": {},
+        "description": "Latest news from MicroPort Scientific.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "microport.com/news"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": "() => import('@/routes/microport/news.ts')"
+      }
+    },
+    "name": "MicroPort",
+    "url": "microport.com",
+    "lang": "en"
   },
   "microsoft": {
     "routes": {
@@ -108797,6 +108879,50 @@
     "apiRoutes": {},
     "url": "www.sicau.edu.cn",
     "lang": "zh-CN"
+  },
+  "siemens": {
+    "routes": {
+      "/press/:region?/:language?": {
+        "path": "/press/:region?/:language?",
+        "name": "Press Releases",
+        "url": "press.siemens.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/siemens/press/global/en",
+        "parameters": {
+          "region": "Region, e.g. `global`, `de`, `us`. Defaults to `global`.",
+          "language": "Language, e.g. `en`, `de`, `ja`. Defaults to `en`."
+        },
+        "description": "Latest press releases from Siemens.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "press.siemens.com/global/en"
+            ],
+            "target": "/press/global/en"
+          }
+        ],
+        "view": 0,
+        "location": "press.ts",
+        "module": "() => import('@/routes/siemens/press.ts')"
+      }
+    },
+    "name": "Siemens",
+    "url": "press.siemens.com",
+    "lang": "en"
   },
   "sigsac": {
     "routes": {
