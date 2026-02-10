@@ -39929,6 +39929,19 @@
       }
     ]
   },
+  "roche.com": {
+    "_name": "Roche",
+    "www": [
+      {
+        "title": "Media Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/media/releases"
+        ],
+        "target": "/roche/media/releases"
+      }
+    ]
+  },
   "rockthejvm.com": {
     "_name": "Rock the JVM",
     ".": [

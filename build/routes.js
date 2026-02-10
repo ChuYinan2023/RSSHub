@@ -103113,6 +103113,50 @@ export default {
     "url": "right.com.cn",
     "lang": "zh-CN"
   },
+  "roche": {
+    "routes": {
+      "/media/releases/:year?": {
+        "path": "/media/releases/:year?",
+        "name": "Media Releases",
+        "url": "www.roche.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/roche/media/releases",
+        "parameters": {
+          "year": "Year of releases, e.g. `2025`. Defaults to current year."
+        },
+        "description": "Subscribe to Roche media releases for latest press releases and announcements.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.roche.com/media/releases"
+            ],
+            "target": "/media/releases"
+          }
+        ],
+        "view": 0,
+        "location": "media-releases.ts",
+        "module": () => import('@/routes/roche/media-releases.ts')
+      }
+    },
+    "name": "Roche",
+    "apiRoutes": {},
+    "url": "www.roche.com",
+    "lang": "en"
+  },
   "rockthejvm": {
     "routes": {
       "/articles": {

@@ -2365,6 +2365,7 @@ export type RoutePath =
   | `/rfa/:language?/:channel?/:subChannel?`
   | `/rfi/:path{.+}?`
   | `/right/forum/:id?`
+  | `/roche/media/releases/:year?`
   | `/rockthejvm/articles`
   | `/rodong/news/:language?`
   | `/routledge/:bookName/book-series/:bookId`

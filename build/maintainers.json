@@ -7246,6 +7246,9 @@
   "/right/forum/:id?": [
     "nczitzk"
   ],
+  "/roche/media/releases/:year?": [
+    "ChuYinan2023"
+  ],
   "/rockthejvm/articles": [
     "nczitzk"
   ],
