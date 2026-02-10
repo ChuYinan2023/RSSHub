@@ -28495,6 +28495,20 @@
       }
     ]
   },
+  "lilly.com": {
+    "_name": "Eli Lilly",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/news/press-releases",
+          "/news-releases"
+        ],
+        "target": "/lilly/press-releases"
+      }
+    ]
+  },
   "line.me": {
     "_name": "LINE",
     "today": [

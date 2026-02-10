@@ -5249,6 +5249,9 @@
   "/likeshop/:site": [
     "nickyfoto"
   ],
+  "/lilly/press-releases": [
+    "ChuYinan2023"
+  ],
   "/line/today/:edition/publisher/:id": [
     "TonyRL"
   ],

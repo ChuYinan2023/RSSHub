@@ -1726,6 +1726,7 @@ export type RoutePath =
   | `/lifeweek/tag/:id`
   | `/lightnovel/:keywords/:security_key?`
   | `/likeshop/:site`
+  | `/lilly/press-releases`
   | `/line/today/:edition/publisher/:id`
   | `/line/today/:edition?/:tab?`
   | `/lineageos/changes`

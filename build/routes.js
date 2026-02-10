@@ -74832,6 +74832,48 @@ export default {
     "url": "likeshop.me",
     "lang": "en"
   },
+  "lilly": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "investor.lilly.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/lilly/press-releases",
+        "parameters": {},
+        "description": "Latest press releases from Eli Lilly.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.lilly.com/news/press-releases",
+              "investor.lilly.com/news-releases"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": () => import('@/routes/lilly/press-releases.ts')
+      }
+    },
+    "name": "Eli Lilly",
+    "url": "investor.lilly.com",
+    "lang": "en"
+  },
   "line": {
     "routes": {
       "/today/:edition/publisher/:id": {
