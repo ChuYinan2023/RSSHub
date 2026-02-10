@@ -2197,6 +2197,7 @@ export type RoutePath =
   | `/peopo/topic/:topicId?`
   | `/perplexity/changelog`
   | `/pfizer/press-releases`
+  | `/philips/news`
   | `/phoronix/:category?/:topic?`
   | `/pianyivps/`
   | `/pianyuan/index/:media?`

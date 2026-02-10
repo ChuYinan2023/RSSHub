@@ -38077,6 +38077,19 @@
       }
     ]
   },
+  "philips.com": {
+    "_name": "Philips",
+    "www.usa": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/a-w/about/news/home"
+        ],
+        "target": "/philips/news"
+      }
+    ]
+  },
   "phoronix.com": {
     "_name": "Phoronix",
     ".": [

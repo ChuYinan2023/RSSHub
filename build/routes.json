@@ -96994,6 +96994,47 @@
     "url": "www.pfizer.com",
     "lang": "en"
   },
+  "philips": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "www.usa.philips.com/a-w/about/news/home",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/philips/news",
+        "parameters": {},
+        "description": "Latest news and press releases from Philips.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.usa.philips.com/a-w/about/news/home"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": "() => import('@/routes/philips/news.ts')"
+      }
+    },
+    "name": "Philips",
+    "url": "www.usa.philips.com",
+    "lang": "en"
+  },
   "phoronix": {
     "routes": {
       "/:category?/:topic?": {
