@@ -47907,6 +47907,47 @@
     "url": "gettr.com",
     "lang": "zh-CN"
   },
+  "gevernova": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "www.gevernova.com/news/media-hub",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/gevernova/press-releases",
+        "parameters": {},
+        "description": "Latest press releases from GE Vernova.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.gevernova.com/news/media-hub"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/gevernova/press-releases.ts')"
+      }
+    },
+    "name": "GE Vernova",
+    "url": "www.gevernova.com",
+    "lang": "en"
+  },
   "gf-cn": {
     "routes": {
       "/news/:category?": {

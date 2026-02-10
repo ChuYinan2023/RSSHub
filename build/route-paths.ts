@@ -1098,6 +1098,7 @@ export type RoutePath =
   | `/getdr/`
   | `/getitfree/:filter{.+}?`
   | `/gettr/user/:id`
+  | `/gevernova/press-releases`
   | `/gf-cn/news/:category?`
   | `/gihyo/list/group/:id`
   | `/gisreportsonline/:path{.*}`

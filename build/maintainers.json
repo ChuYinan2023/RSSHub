@@ -3385,6 +3385,9 @@
   "/gettr/user/:id": [
     "TonyRL"
   ],
+  "/gevernova/press-releases": [
+    "ChuYinan2023"
+  ],
   "/gf-cn/news/:category?": [
     "nczitzk"
   ],

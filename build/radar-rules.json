@@ -18253,6 +18253,19 @@
       }
     ]
   },
+  "gevernova.com": {
+    "_name": "GE Vernova",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/news/media-hub"
+        ],
+        "target": "/gevernova/press-releases"
+      }
+    ]
+  },
   "sunborngame.com": {
     "_name": "少女前线",
     ".": [
