@@ -16302,6 +16302,14 @@
     "_name": "European Society of Cardiology",
     "www": [
       {
+        "title": "News Room",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/news/news-room/"
+        ],
+        "target": "/escardio/news-room"
+      },
+      {
         "title": "Press Releases",
         "docs": "https://docs.rsshub.app/routes/journal",
         "source": [

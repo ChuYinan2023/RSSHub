@@ -2865,6 +2865,9 @@
   "/eprice/:region?": [
     "TonyRL"
   ],
+  "/escardio/news-room": [
+    "ChuYinan2023"
+  ],
   "/escardio/press-releases": [
     "ChuYinan2023"
   ],

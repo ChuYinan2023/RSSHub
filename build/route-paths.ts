@@ -934,6 +934,7 @@ export type RoutePath =
   | `/enterprisecraftsmanship/archives`
   | `/epicgames/freegames/:locale?/:country?`
   | `/eprice/:region?`
+  | `/escardio/news-room`
   | `/escardio/press-releases`
   | `/eshukan/academic/:id?`
   | `/espn/news/:sport`

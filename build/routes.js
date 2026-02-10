@@ -41200,6 +41200,40 @@ export default {
   },
   "escardio": {
     "routes": {
+      "/news-room": {
+        "path": "/news-room",
+        "name": "News Room",
+        "url": "www.escardio.org/news/news-room/",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/escardio/news-room",
+        "parameters": {},
+        "description": "Latest news from the ESC News Room including community and congress news.",
+        "categories": [
+          "journal"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.escardio.org/news/news-room/"
+            ],
+            "target": "/news-room"
+          }
+        ],
+        "view": 0,
+        "location": "news-room.ts",
+        "module": () => import('@/routes/escardio/news-room.ts')
+      },
       "/press-releases": {
         "path": "/press-releases",
         "categories": [
