@@ -450,7 +450,6 @@ export type RoutePath =
   | `/cara/portfolio/:user`
   | `/cara/timeline/:user`
   | `/cardiovascularbusiness/news`
-  | `/cardiovascularbusiness/press-releases`
   | `/carousell/:region/:keyword`
   | `/cartoonmad/comic/:id`
   | `/cas/cg/:caty?`
