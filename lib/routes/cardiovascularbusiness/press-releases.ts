@@ -1,9 +1,11 @@
+import { execSync } from 'node:child_process';
+
 import { load } from 'cheerio';
 
 import type { Data, Route } from '@/types';
-import { getPuppeteerPage } from '@/utils/puppeteer';
 
 const baseUrl = 'https://cardiovascularbusiness.com';
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
 export const route: Route = {
     path: '/press-releases',
@@ -12,7 +14,7 @@ export const route: Route = {
     parameters: {},
     features: {
         requireConfig: false,
-        requirePuppeteer: true,
+        requirePuppeteer: false,
         antiCrawler: true,
         supportBT: false,
         supportPodcast: false,
@@ -25,24 +27,14 @@ export const route: Route = {
     url: 'cardiovascularbusiness.com/resources/press-releases',
 };
 
-async function handler(): Promise<Data> {
+function handler(): Data {
     const listUrl = `${baseUrl}/resources/press-releases`;
-
-    const { page, destory } = await getPuppeteerPage(listUrl, {
-        onBeforeLoad: async (page) => {
-            await page.setRequestInterception(true);
-            page.on('request', (request) => {
-                request.resourceType() === 'document' ? request.continue() : request.abort();
-            });
-        },
+    const response = execSync(`curl -s "${listUrl}" -A "${UA}" -H "Accept: text/html"`, {
+        encoding: 'utf-8',
+        maxBuffer: 2 * 1024 * 1024,
+        timeout: 30000,
     });
-
-    await page.waitForSelector('.views-row');
-    const html = await page.evaluate(() => document.documentElement.innerHTML);
-    await page.close();
-    await destory();
-
-    const $ = load(html);
+    const $ = load(response);
 
     const items = $('div.views-row')
         .toArray()
