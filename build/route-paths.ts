@@ -915,6 +915,7 @@ export type RoutePath =
   | `/ecust/jwc/:category?`
   | `/ecust/jxjy/news`
   | `/ecust/yjs`
+  | `/edwardsvacuum/news`
   | `/eeo/kuaixun`
   | `/egsea/flash`
   | `/ehentai/favorites/:favcat?/:order?/:page?/:routeParams?`
@@ -2413,6 +2414,7 @@ export type RoutePath =
   | `/saraba1st/digest/:tid`
   | `/saraba1st/thread/:tid`
   | `/sass/gs/:type`
+  | `/scai/events`
   | `/scau/yjsy`
   | `/scau/yzb`
   | `/science/blogs/:name?`

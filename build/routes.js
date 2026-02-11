@@ -40599,6 +40599,47 @@ export default {
     "url": "e.ecust.edu.cn",
     "lang": "zh-CN"
   },
+  "edwardsvacuum": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News and Events",
+        "url": "www.edwardsvacuum.com/en-uk/news-and-events",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/edwardsvacuum/news",
+        "parameters": {},
+        "description": "Latest news and events from Edwards Vacuum.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.edwardsvacuum.com/en-uk/news-and-events"
+            ],
+            "target": "/news"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": () => import('@/routes/edwardsvacuum/news.ts')
+      }
+    },
+    "name": "Edwards Vacuum",
+    "url": "www.edwardsvacuum.com",
+    "lang": "en"
+  },
   "eeo": {
     "routes": {
       "/kuaixun": {
@@ -105009,6 +105050,49 @@ export default {
     "apiRoutes": {},
     "url": "gs.sass.org.cn",
     "lang": "zh-CN"
+  },
+  "scai": {
+    "routes": {
+      "/events": {
+        "path": "/events",
+        "name": "Events Schedule",
+        "url": "www.scai.org/education-and-events/events-schedule",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/scai/events",
+        "parameters": {},
+        "description": "Upcoming events and conferences from SCAI.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.scai.org/education-and-events/events-schedule"
+            ],
+            "target": "/events"
+          }
+        ],
+        "view": 0,
+        "location": "events.ts",
+        "module": () => import('@/routes/scai/events.ts')
+      }
+    },
+    "name": "SCAI",
+    "apiRoutes": {},
+    "url": "www.scai.org",
+    "description": "Society for Cardiovascular Angiography & Interventions",
+    "lang": "en"
   },
   "scau": {
     "routes": {
