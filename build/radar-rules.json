@@ -3699,6 +3699,19 @@
       }
     ]
   },
+  "ahajournals.org": {
+    "_name": "AHA Journals",
+    "www": [
+      {
+        "title": "Latest Articles",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/toc/:journal/0/0"
+        ],
+        "target": "/ahajournals/toc/:journal"
+      }
+    ]
+  },
   "ahjzu.edu.cn": {
     "_name": "安徽建筑大学",
     "news": [

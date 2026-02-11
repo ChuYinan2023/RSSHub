@@ -406,6 +406,9 @@
   "/agri/:category{.+}?": [
     "nczitzk"
   ],
+  "/ahajournals/toc/:journal": [
+    "ChuYinan2023"
+  ],
   "/ahjzu/news": [
     "Yuk-0v0"
   ],

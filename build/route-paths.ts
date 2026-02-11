@@ -136,6 +136,7 @@ export type RoutePath =
   | `/agora0/:category?`
   | `/agora0/pen0`
   | `/agri/:category{.+}?`
+  | `/ahajournals/toc/:journal`
   | `/ahjzu/news`
   | `/ai-bot/daily-ai-news`
   | `/aiaa/journal/:journalID`

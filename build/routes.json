@@ -7217,6 +7217,50 @@
     "description": "",
     "lang": "zh-CN"
   },
+  "ahajournals": {
+    "routes": {
+      "/toc/:journal": {
+        "path": "/toc/:journal",
+        "name": "Latest Articles",
+        "url": "www.ahajournals.org",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/ahajournals/toc/circ",
+        "parameters": {
+          "journal": "Journal short name, see below for supported values"
+        },
+        "description": "Latest articles from AHA Journals via native RSS feed.\n\n| Journal | Code |\n| --- | --- |\n| Circulation | circ |\n| Circ: Arrhythmia & Electrophysiology | circep |\n| Circ: Heart Failure | circheartfailure |\n| Circ: Cardiovascular Imaging | circimaging |\n| Circ: Cardiovascular Interventions | circinterventions |\n| Circ: Cardiovascular Quality & Outcomes | circoutcomes |\n| Circ: Genomic & Precision Medicine | circgen |\n| Arteriosclerosis, Thrombosis & Vascular Biology | atvb |\n| Hypertension | hyp |\n| Stroke | str |\n| JAHA | jaha |",
+        "categories": [
+          "journal"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ahajournals.org/toc/:journal/0/0"
+            ],
+            "target": "/toc/:journal"
+          }
+        ],
+        "view": 0,
+        "location": "toc.ts",
+        "module": "() => import('@/routes/ahajournals/toc.ts')"
+      }
+    },
+    "name": "AHA Journals",
+    "url": "www.ahajournals.org",
+    "description": "American Heart Association Journals",
+    "lang": "en"
+  },
   "ahjzu": {
     "routes": {
       "/news": {
