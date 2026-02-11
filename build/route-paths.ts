@@ -915,7 +915,6 @@ export type RoutePath =
   | `/ecust/jwc/:category?`
   | `/ecust/jxjy/news`
   | `/ecust/yjs`
-  | `/edwardsvacuum/news`
   | `/eeo/kuaixun`
   | `/egsea/flash`
   | `/ehentai/favorites/:favcat?/:order?/:page?/:routeParams?`
