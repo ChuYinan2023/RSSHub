@@ -105069,7 +105069,7 @@ export default {
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
