@@ -1,6 +1,5 @@
 import { load } from 'cheerio';
 
-import { config } from '@/config';
 import type { Data, DataItem, Route } from '@/types';
 import { ViewType } from '@/types';
 import cache from '@/utils/cache';
@@ -9,10 +8,12 @@ import { parseDate } from '@/utils/parse-date';
 
 const baseUrl = 'https://www.scai.org';
 
-const headers = {
-    'user-agent': config.trueUA,
-    accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'accept-language': 'en-US,en;q=0.9',
+const fetchOptions = {
+    headerGeneratorOptions: {
+        browsers: [{ name: 'chrome', minVersion: 120 }],
+        operatingSystems: ['windows'],
+        devices: ['desktop'],
+    },
 };
 
 export const route: Route = {
@@ -50,7 +51,7 @@ function cleanDate(dateText: string): string {
 
 async function handler(): Promise<Data> {
     const listUrl = `${baseUrl}/education-and-events/events-schedule`;
-    const html = await ofetch(listUrl, { headers });
+    const html = await ofetch(listUrl, fetchOptions);
     const $ = load(html);
 
     const listItems: Array<{
@@ -87,7 +88,7 @@ async function handler(): Promise<Data> {
         listItems.slice(0, 20).map(async (item) => {
             const cached = (await cache.tryGet(item.link, async () => {
                 try {
-                    const detailHtml = await ofetch(item.link, { headers });
+                    const detailHtml = await ofetch(item.link, fetchOptions);
                     const $d = load(detailHtml);
                     $d('script, style').remove();
 
