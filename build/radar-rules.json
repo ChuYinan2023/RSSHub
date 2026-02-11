@@ -16120,6 +16120,19 @@
       }
     ]
   },
+  "edwardsvacuum.com": {
+    "_name": "Edwards Vacuum",
+    "www": [
+      {
+        "title": "News and Events",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/en-uk/news-and-events"
+        ],
+        "target": "/edwardsvacuum/news"
+      }
+    ]
+  },
   "eeo.com.cn": {
     "_name": "经济观察网",
     "www": [
