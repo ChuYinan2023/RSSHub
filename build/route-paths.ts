@@ -943,6 +943,7 @@ export type RoutePath =
   | `/eshukan/academic/:id?`
   | `/espn/news/:sport`
   | `/esquirehk/tag/:id?`
+  | `/eurointervention/latest`
   | `/europechinese/latest`
   | `/eventbrite/:region/:eventType?/:includePromoted?`
   | `/eventernote/actors/:name/:id`

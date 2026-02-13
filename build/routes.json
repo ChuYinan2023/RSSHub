@@ -41547,6 +41547,50 @@
     "url": "www.esquirehk.com",
     "lang": "zh-HK"
   },
+  "eurointervention": {
+    "routes": {
+      "/latest": {
+        "path": "/latest",
+        "name": "Latest Issue",
+        "url": "eurointervention.pcronline.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/eurointervention/latest",
+        "parameters": {},
+        "description": "Latest issue articles from EuroIntervention journal.",
+        "categories": [
+          "journal"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "eurointervention.pcronline.com/issues/latest",
+              "eurointervention.pcronline.com/"
+            ],
+            "target": "/latest"
+          }
+        ],
+        "view": 0,
+        "location": "latest.ts",
+        "module": "() => import('@/routes/eurointervention/latest.ts')"
+      }
+    },
+    "name": "EuroIntervention",
+    "apiRoutes": {},
+    "url": "eurointervention.pcronline.com",
+    "description": "EuroIntervention - Reference journal for coronary, valvular and structural interventions",
+    "lang": "en"
+  },
   "europechinese": {
     "routes": {
       "/latest": {

@@ -16412,6 +16412,38 @@
       }
     ]
   },
+  "pcronline.com": {
+    "_name": "EuroIntervention",
+    "eurointervention": [
+      {
+        "title": "Latest Issue",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/issues/latest",
+          "/"
+        ],
+        "target": "/eurointervention/latest"
+      }
+    ],
+    "www": [
+      {
+        "title": "PCR Press Releases",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/News/PCR-Press-Releases"
+        ],
+        "target": "/pcronline/pcr-press-releases"
+      },
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/News/Press-releases"
+        ],
+        "target": "/pcronline/press-releases"
+      }
+    ]
+  },
   "blogspot.com": {
     "_name": "歐洲動態（國際）",
     "europechinese": [
@@ -38058,27 +38090,6 @@
           "/"
         ],
         "target": "/pconline/focus"
-      }
-    ]
-  },
-  "pcronline.com": {
-    "_name": "PCRonline",
-    "www": [
-      {
-        "title": "PCR Press Releases",
-        "docs": "https://docs.rsshub.app/routes/journal",
-        "source": [
-          "/News/PCR-Press-Releases"
-        ],
-        "target": "/pcronline/pcr-press-releases"
-      },
-      {
-        "title": "Press Releases",
-        "docs": "https://docs.rsshub.app/routes/journal",
-        "source": [
-          "/News/Press-releases"
-        ],
-        "target": "/pcronline/press-releases"
       }
     ]
   },
