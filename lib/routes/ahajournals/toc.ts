@@ -91,11 +91,11 @@ async function handler(ctx): Promise<Data> {
                     .trim() || $item.find('description').text().trim();
             const dateStr =
                 $item
-                    .find(String.raw`prism\:coverDate, coverDate`)
+                    .find(String.raw`dc\:date, date`)
                     .text()
                     .trim() ||
                 $item
-                    .find(String.raw`dc\:date, date`)
+                    .find(String.raw`prism\:coverDate, coverDate`)
                     .text()
                     .trim();
             const pubDate = dateStr ? parseDate(dateStr) : undefined;
