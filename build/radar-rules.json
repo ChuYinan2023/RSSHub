@@ -16133,6 +16133,27 @@
       }
     ]
   },
+  "edwards.com": {
+    "_name": "Edwards Lifesciences",
+    "www": [
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/newsroom/press-releases"
+        ],
+        "target": "/edwards/press-releases"
+      },
+      {
+        "title": "Press Releases",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/newsroom"
+        ],
+        "target": "/edwards/press-releases"
+      }
+    ]
+  },
   "edwardsvacuum.com": {
     "_name": "Edwards Vacuum",
     "www": [

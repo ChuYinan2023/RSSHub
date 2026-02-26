@@ -40643,6 +40643,52 @@
     "url": "e.ecust.edu.cn",
     "lang": "zh-CN"
   },
+  "edwards": {
+    "routes": {
+      "/press-releases": {
+        "path": "/press-releases",
+        "name": "Press Releases",
+        "url": "www.edwards.com/newsroom/press-releases",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/edwards/press-releases",
+        "description": "Edwards Lifesciences press releases from the newsroom.",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.edwards.com/newsroom/press-releases"
+            ],
+            "target": "/press-releases"
+          },
+          {
+            "source": [
+              "www.edwards.com/newsroom"
+            ],
+            "target": "/press-releases"
+          }
+        ],
+        "view": 0,
+        "location": "press-releases.ts",
+        "module": "() => import('@/routes/edwards/press-releases.ts')"
+      }
+    },
+    "name": "Edwards Lifesciences",
+    "url": "www.edwards.com",
+    "lang": "en"
+  },
   "edwardsvacuum": {
     "routes": {
       "/news": {
