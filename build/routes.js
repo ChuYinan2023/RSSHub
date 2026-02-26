@@ -43148,6 +43148,39 @@ export default {
   },
   "fda": {
     "routes": {
+      "/510k": {
+        "path": "/510k",
+        "name": "510(k) Premarket Notifications",
+        "url": "www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/fda/510k",
+        "description": "Latest FDA 510(k) medical device clearances from the openFDA API.",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm"
+            ],
+            "target": "/510k"
+          }
+        ],
+        "view": 0,
+        "location": "510k.ts",
+        "module": () => import('@/routes/fda/510k.ts')
+      },
       "/cdrh/:titleOnly?": {
         "path": "/cdrh/:titleOnly?",
         "radar": [

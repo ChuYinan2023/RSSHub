@@ -974,6 +974,7 @@ export type RoutePath =
   | `/fashionnetwork/cn/lists/:id?`
   | `/fastbull/express-news`
   | `/fastbull/news`
+  | `/fda/510k`
   | `/fda/cdrh/:titleOnly?`
   | `/fda/medwatch`
   | `/fediverse/timeline/:account`

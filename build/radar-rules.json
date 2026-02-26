@@ -16968,6 +16968,16 @@
   },
   "fda.gov": {
     "_name": "U.S. Food and Drug Administration",
+    "www.accessdata": [
+      {
+        "title": "510(k) Premarket Notifications",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/scripts/cdrh/cfdocs/cfpmn/pmn.cfm"
+        ],
+        "target": "/fda/510k"
+      }
+    ],
     ".": [
       {
         "title": "Unknown",
