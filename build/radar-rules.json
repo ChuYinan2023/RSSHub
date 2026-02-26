@@ -29517,6 +29517,35 @@
       }
     ]
   },
+  "medicaldesignbriefs.com": {
+    "_name": "Medical Design Briefs",
+    "www": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/mdb/topic/:topic"
+        ],
+        "target": "/medicaldesignbriefs/:topic"
+      },
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/mdb/techbriefs"
+        ],
+        "target": "/medicaldesignbriefs/techbriefs"
+      },
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/medicaldesignbriefs/:topic?"
+      }
+    ]
+  },
   "medieval-china.club": {
     "_name": "中国的中古",
     ".": [

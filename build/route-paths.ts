@@ -1826,6 +1826,7 @@ export type RoutePath =
   | `/mckinsey/cn/:category?`
   | `/mcmod/:type`
   | `/mdpi/:journal`
+  | `/medicaldesignbriefs/:topic?`
   | `/medieval-china/`
   | `/medium/feed/:user`
   | `/medium/following/:user`

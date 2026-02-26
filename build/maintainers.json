@@ -5556,6 +5556,9 @@
   "/mdpi/:journal": [
     "Derekmini"
   ],
+  "/medicaldesignbriefs/:topic?": [
+    "ChuYinan2023"
+  ],
   "/medieval-china/": [
     "artefaritaKuniklo"
   ],

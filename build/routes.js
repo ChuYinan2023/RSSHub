@@ -78581,6 +78581,98 @@ export default {
     "url": "www.mdpi.com",
     "lang": "en"
   },
+  "medicaldesignbriefs": {
+    "routes": {
+      "/:topic?": {
+        "path": "/:topic?",
+        "name": "Articles",
+        "url": "www.medicaldesignbriefs.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/medicaldesignbriefs",
+        "parameters": {
+          "topic": {
+            "description": "Topic slug, see table below. Defaults to all articles.",
+            "default": "",
+            "options": [
+              {
+                "value": "",
+                "label": "All"
+              },
+              {
+                "value": "materials-manufacturing",
+                "label": "Materials & Manufacturing"
+              },
+              {
+                "value": "design-testing",
+                "label": "Design & Testing"
+              },
+              {
+                "value": "sensors-wearables",
+                "label": "Sensors & Wearables"
+              },
+              {
+                "value": "electronics-software",
+                "label": "Electronics & Software"
+              },
+              {
+                "value": "robotics-automation",
+                "label": "Robotics & Automation"
+              },
+              {
+                "value": "iomt-connectivity",
+                "label": "IoMT & Connectivity"
+              },
+              {
+                "value": "techbriefs",
+                "label": "Tech Briefs"
+              }
+            ]
+          }
+        },
+        "description": "| Topic | Slug |\n| --- | --- |\n| All | (empty) |\n| Materials & Manufacturing | materials-manufacturing |\n| Design & Testing | design-testing |\n| Sensors & Wearables | sensors-wearables |\n| Electronics & Software | electronics-software |\n| Robotics & Automation | robotics-automation |\n| IoMT & Connectivity | iomt-connectivity |\n| Tech Briefs | techbriefs |",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.medicaldesignbriefs.com/mdb/topic/:topic"
+            ],
+            "target": "/:topic"
+          },
+          {
+            "source": [
+              "www.medicaldesignbriefs.com/mdb/techbriefs"
+            ],
+            "target": "/techbriefs"
+          },
+          {
+            "source": [
+              "www.medicaldesignbriefs.com/"
+            ],
+            "target": ""
+          }
+        ],
+        "view": 0,
+        "location": "topic.ts",
+        "module": () => import('@/routes/medicaldesignbriefs/topic.ts')
+      }
+    },
+    "name": "Medical Design Briefs",
+    "url": "www.medicaldesignbriefs.com",
+    "lang": "en"
+  },
   "medieval-china": {
     "routes": {
       "/": {
