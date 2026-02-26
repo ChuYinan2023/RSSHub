@@ -16971,12 +16971,30 @@
     ".": [
       {
         "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/other",
+        "docs": "https://docs.rsshub.app/routes/government",
         "source": [
           "/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates",
           "/"
         ],
         "target": "/fda/cdrh/:titleOnly"
+      }
+    ],
+    "www": [
+      {
+        "title": "MedWatch Safety Alerts",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program"
+        ],
+        "target": "/fda/medwatch"
+      },
+      {
+        "title": "MedWatch Safety Alerts",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/medical-devices/medical-device-recalls-and-early-alerts"
+        ],
+        "target": "/fda/medwatch"
       }
     ]
   },
@@ -18760,6 +18778,19 @@
           "/"
         ],
         "target": "/globallawreview/"
+      }
+    ]
+  },
+  "globenewswire.com": {
+    "_name": "GlobeNewsWire",
+    "www": [
+      {
+        "title": "Industry News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/rss/list"
+        ],
+        "target": "/globenewswire/industry/medical-equipment"
       }
     ]
   },
@@ -39259,6 +39290,43 @@
           "/news"
         ],
         "target": "/priconne-redive/news/zh-tw"
+      }
+    ]
+  },
+  "prnewswire.com": {
+    "_name": "PR Newswire",
+    "www": [
+      {
+        "title": "News Releases",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/news-releases/health-latest-news/medical-equipment-list/"
+        ],
+        "target": "/prnewswire/news/medical-equipment"
+      },
+      {
+        "title": "News Releases",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/news-releases/health-latest-news/pharmaceuticals-list/"
+        ],
+        "target": "/prnewswire/news/pharmaceuticals"
+      },
+      {
+        "title": "News Releases",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/news-releases/health-latest-news/fda-approval-list/"
+        ],
+        "target": "/prnewswire/news/fda-approval"
+      },
+      {
+        "title": "News Releases",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/news-releases/health-latest-news/health-latest-news-list/"
+        ],
+        "target": "/prnewswire/news/health"
       }
     ]
   },

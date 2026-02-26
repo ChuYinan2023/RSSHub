@@ -2990,6 +2990,9 @@
     "nczitzk"
   ],
   "/fda/cdrh/:titleOnly?": [],
+  "/fda/medwatch": [
+    "ChuYinan2023"
+  ],
   "/fediverse/timeline/:account": [
     "DIYgod",
     "pseudoyu"
@@ -3517,6 +3520,9 @@
   ],
   "/globallawreview/": [
     "nczitzk"
+  ],
+  "/globenewswire/industry/:industry?": [
+    "ChuYinan2023"
   ],
   "/gmcmonline/chinacustoms": [
     "nczitzk"
@@ -6947,6 +6953,9 @@
   "/priconne-redive/news/:server?": [
     "SayaSS",
     "frankcwl"
+  ],
+  "/prnewswire/news/:category?": [
+    "ChuYinan2023"
   ],
   "/producereport/:category{.+}?": [
     "nczitzk"

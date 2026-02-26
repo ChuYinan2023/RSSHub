@@ -43164,6 +43164,45 @@
         "url": "fda.gov/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates",
         "location": "cdrh.ts",
         "module": "() => import('@/routes/fda/cdrh.ts')"
+      },
+      "/medwatch": {
+        "path": "/medwatch",
+        "name": "MedWatch Safety Alerts",
+        "url": "www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/fda/medwatch",
+        "description": "FDA MedWatch safety alerts for medical device recalls and early alerts.",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program"
+            ],
+            "target": "/medwatch"
+          },
+          {
+            "source": [
+              "www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts"
+            ],
+            "target": "/medwatch"
+          }
+        ],
+        "view": 0,
+        "location": "medwatch.ts",
+        "module": "() => import('@/routes/fda/medwatch.ts')"
       }
     },
     "name": "U.S. Food and Drug Administration",
@@ -49841,6 +49880,79 @@
     "apiRoutes": {},
     "url": "globallawreview.org",
     "lang": "zh-CN"
+  },
+  "globenewswire": {
+    "routes": {
+      "/industry/:industry?": {
+        "path": "/industry/:industry?",
+        "name": "Industry News",
+        "url": "www.globenewswire.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/globenewswire/industry/medical-equipment",
+        "parameters": {
+          "industry": {
+            "description": "Industry slug, see table below. Defaults to medical-equipment.",
+            "default": "medical-equipment",
+            "options": [
+              {
+                "value": "medical-equipment",
+                "label": "Medical Equipment"
+              },
+              {
+                "value": "medical-supplies",
+                "label": "Medical Supplies"
+              },
+              {
+                "value": "health-care",
+                "label": "Health Care"
+              },
+              {
+                "value": "health-care-providers",
+                "label": "Health Care Providers"
+              },
+              {
+                "value": "biotechnology",
+                "label": "Biotechnology"
+              },
+              {
+                "value": "pharmaceuticals",
+                "label": "Pharmaceuticals"
+              }
+            ]
+          }
+        },
+        "description": "| Industry | Slug |\n| --- | --- |\n| Medical Equipment | medical-equipment |\n| Medical Supplies | medical-supplies |\n| Health Care | health-care |\n| Health Care Providers | health-care-providers |\n| Biotechnology | biotechnology |\n| Pharmaceuticals | pharmaceuticals |",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.globenewswire.com/rss/list"
+            ],
+            "target": "/industry/medical-equipment"
+          }
+        ],
+        "view": 0,
+        "location": "industry.ts",
+        "module": "() => import('@/routes/globenewswire/industry.ts')"
+      }
+    },
+    "name": "GlobeNewsWire",
+    "apiRoutes": {},
+    "url": "www.globenewswire.com",
+    "lang": "en"
   },
   "gmcmonline": {
     "routes": {
@@ -100216,6 +100328,88 @@
     "name": "PRINCESS CONNECT! Re Dive プリンセスコネクト！Re Dive",
     "url": "priconne-redive.jp",
     "lang": "ja"
+  },
+  "prnewswire": {
+    "routes": {
+      "/news/:category?": {
+        "path": "/news/:category?",
+        "name": "News Releases",
+        "url": "www.prnewswire.com",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "example": "/prnewswire/news/medical-equipment",
+        "parameters": {
+          "category": {
+            "description": "Category slug, see table below. Defaults to medical-equipment.",
+            "default": "medical-equipment",
+            "options": [
+              {
+                "value": "medical-equipment",
+                "label": "Medical Equipment"
+              },
+              {
+                "value": "pharmaceuticals",
+                "label": "Pharmaceuticals"
+              },
+              {
+                "value": "fda-approval",
+                "label": "FDA Approval"
+              },
+              {
+                "value": "health",
+                "label": "Health"
+              }
+            ]
+          }
+        },
+        "description": "| Category | Slug |\n| --- | --- |\n| Medical Equipment | medical-equipment |\n| Pharmaceuticals | pharmaceuticals |\n| FDA Approval | fda-approval |\n| Health | health |",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.prnewswire.com/news-releases/health-latest-news/medical-equipment-list/"
+            ],
+            "target": "/news/medical-equipment"
+          },
+          {
+            "source": [
+              "www.prnewswire.com/news-releases/health-latest-news/pharmaceuticals-list/"
+            ],
+            "target": "/news/pharmaceuticals"
+          },
+          {
+            "source": [
+              "www.prnewswire.com/news-releases/health-latest-news/fda-approval-list/"
+            ],
+            "target": "/news/fda-approval"
+          },
+          {
+            "source": [
+              "www.prnewswire.com/news-releases/health-latest-news/health-latest-news-list/"
+            ],
+            "target": "/news/health"
+          }
+        ],
+        "view": 0,
+        "location": "news.ts",
+        "module": "() => import('@/routes/prnewswire/news.ts')"
+      }
+    },
+    "name": "PR Newswire",
+    "url": "www.prnewswire.com",
+    "lang": "en"
   },
   "producereport": {
     "routes": {

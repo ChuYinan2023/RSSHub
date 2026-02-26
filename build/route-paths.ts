@@ -975,6 +975,7 @@ export type RoutePath =
   | `/fastbull/express-news`
   | `/fastbull/news`
   | `/fda/cdrh/:titleOnly?`
+  | `/fda/medwatch`
   | `/fediverse/timeline/:account`
   | `/feng/forum/:id/:type?`
   | `/ff14/ff14_global/:lang/:type?`
@@ -1141,6 +1142,7 @@ export type RoutePath =
   | `/gitpod/changelog`
   | `/gitstar-ranking/:category?`
   | `/globallawreview/`
+  | `/globenewswire/industry/:industry?`
   | `/gmcmonline/chinacustoms`
   | `/gmu/news/:type?`
   | `/gmu/yjs/:type/:subtype`
@@ -2269,6 +2271,7 @@ export type RoutePath =
   | `/pornhub/users/:username/:language?`
   | `/postman/release-notes`
   | `/priconne-redive/news/:server?`
+  | `/prnewswire/news/:category?`
   | `/producereport/:category{.+}?`
   | `/producthunt/today`
   | `/ps/monthly-games`
