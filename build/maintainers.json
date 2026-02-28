@@ -5592,6 +5592,9 @@
   "/medscape/cardiology": [
     "ChuYinan2023"
   ],
+  "/medscape/latest-news": [
+    "ChuYinan2023"
+  ],
   "/medsci/:sid?/:tid?": [
     "nczitzk"
   ],

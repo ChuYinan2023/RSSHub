@@ -29644,6 +29644,14 @@
           "/index/list_13471_0"
         ],
         "target": "/medscape/cardiology"
+      },
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/index/list_13470_0"
+        ],
+        "target": "/medscape/latest-news"
       }
     ]
   },

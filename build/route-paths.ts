@@ -1838,6 +1838,7 @@ export type RoutePath =
   | `/medium/list/:user/:catalogId`
   | `/medium/tag/:user/:tag`
   | `/medscape/cardiology`
+  | `/medscape/latest-news`
   | `/medsci/:sid?/:tid?`
   | `/medtechdive/deep-dive`
   | `/medtechdive/press-release`

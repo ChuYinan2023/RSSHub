@@ -79079,6 +79079,37 @@ export default {
         "url": "www.medscape.com/index/list_13471_0",
         "location": "cardiology.ts",
         "module": () => import('@/routes/medscape/cardiology.ts')
+      },
+      "/latest-news": {
+        "path": "/latest-news",
+        "categories": [
+          "journal"
+        ],
+        "example": "/medscape/latest-news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.medscape.com/index/list_13470_0"
+            ],
+            "target": "/latest-news"
+          }
+        ],
+        "name": "Latest News",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.medscape.com/index/list_13470_0",
+        "location": "latest-news.ts",
+        "module": () => import('@/routes/medscape/latest-news.ts')
       }
     },
     "name": "Medscape",
