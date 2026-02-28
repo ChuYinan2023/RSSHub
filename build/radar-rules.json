@@ -29651,6 +29651,14 @@
     "_name": "MedTech Dive",
     "www": [
       {
+        "title": "Deep Dive",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/deep-dive/"
+        ],
+        "target": "/medtechdive/deep-dive"
+      },
+      {
         "title": "Press Releases",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [

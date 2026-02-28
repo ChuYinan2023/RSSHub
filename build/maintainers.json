@@ -5595,6 +5595,9 @@
   "/medsci/:sid?/:tid?": [
     "nczitzk"
   ],
+  "/medtechdive/deep-dive": [
+    "ChuYinan2023"
+  ],
   "/medtechdive/press-release": [
     "ChuYinan2023"
   ],

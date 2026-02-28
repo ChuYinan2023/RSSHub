@@ -1839,6 +1839,7 @@ export type RoutePath =
   | `/medium/tag/:user/:tag`
   | `/medscape/cardiology`
   | `/medsci/:sid?/:tid?`
+  | `/medtechdive/deep-dive`
   | `/medtechdive/press-release`
   | `/medtronic/business-regional-news`
   | `/medtronic/press-releases`

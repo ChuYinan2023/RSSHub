@@ -79122,6 +79122,37 @@
   },
   "medtechdive": {
     "routes": {
+      "/deep-dive": {
+        "path": "/deep-dive",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/medtechdive/deep-dive",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.medtechdive.com/deep-dive/"
+            ],
+            "target": "/deep-dive"
+          }
+        ],
+        "name": "Deep Dive",
+        "maintainers": [
+          "ChuYinan2023"
+        ],
+        "url": "www.medtechdive.com/deep-dive/",
+        "location": "deep-dive.ts",
+        "module": "() => import('@/routes/medtechdive/deep-dive.ts')"
+      },
       "/press-release": {
         "path": "/press-release",
         "categories": [
@@ -79155,6 +79186,7 @@
       }
     },
     "name": "MedTech Dive",
+    "apiRoutes": {},
     "url": "www.medtechdive.com",
     "lang": "en"
   },
