@@ -1,9 +1,8 @@
 import { load } from 'cheerio';
 
-import { config } from '@/config';
 import type { Data, Route } from '@/types';
 import cache from '@/utils/cache';
-import got from '@/utils/got';
+import ofetch from '@/utils/ofetch';
 import { parseDate } from '@/utils/parse-date';
 
 const baseUrl = 'https://www.medtechdive.com';
@@ -35,14 +34,8 @@ export const route: Route = {
 
 async function handler(): Promise<Data> {
     const listUrl = `${baseUrl}/deep-dive/`;
-    const response = await got(listUrl, {
-        headers: {
-            'User-Agent': config.trueUA,
-            Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-        },
-    });
-    const $ = load(response.data);
+    const response = await ofetch(listUrl);
+    const $ = load(response);
 
     const listItems = $('li.feed__item')
         .toArray()
@@ -69,14 +62,8 @@ async function handler(): Promise<Data> {
     const items = await Promise.all(
         listItems.map((item) =>
             cache.tryGet(item.link, async () => {
-                const detailResponse = await got(item.link, {
-                    headers: {
-                        'User-Agent': config.trueUA,
-                        Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                        'Accept-Language': 'en-US,en;q=0.5',
-                    },
-                });
-                const $detail = load(detailResponse.data);
+                const detailResponse = await ofetch(item.link);
+                const $detail = load(detailResponse);
 
                 const description = $detail('.content__text').html()?.trim() || '';
                 const tags = $detail('a.tag')
