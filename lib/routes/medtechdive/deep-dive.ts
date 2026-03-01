@@ -65,10 +65,12 @@ async function handler(): Promise<Data> {
                 const detailResponse = await ofetch(item.link);
                 const $detail = load(detailResponse);
 
-                const description = $detail('.content__text').html()?.trim() || '';
-                const tags = $detail('a.tag')
+                const body = $detail('.article-body').clone();
+                body.find('.text-to-speech, script, style, .social-share, .related-articles, .newsletter-signup').remove();
+                const description = body.html()?.trim() || '';
+                const tags = $detail('.article-topic, .topic')
                     .toArray()
-                    .map((el) => $detail(el).text().trim())
+                    .map((el) => $detail(el).text().trim().replace(/,\s*$/, ''))
                     .filter(Boolean);
 
                 return {
